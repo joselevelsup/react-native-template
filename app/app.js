@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+
 import {
   Container,
   Header,
@@ -19,7 +20,7 @@ import Sidebar from "./sidebar";
 import Tab1 from "./pages/home";
 import Tab2 from "./pages/about";
 
-export default class Layout extends Component{
+export default class App extends Component{
   closeDrawer = () => {
     this.drawer._root.close();
   }
@@ -53,9 +54,6 @@ export default class Layout extends Component{
             <Tab2 />
           </Tab>
         </Tabs>
-        <Content>
-
-       </Content>
        </Drawer>
       </Container>
     )
